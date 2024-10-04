@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.dd{
+    background-image: url("https://www.kawasaki-cp.khi.co.jp/motorshow2017/images/mark/river_mark_bg_sp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+.nv{
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.foot{
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+}
+.hh:hover{
+
+  background-color: rgb(216, 210, 222);
 }
