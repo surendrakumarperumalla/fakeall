@@ -1,24 +1,28 @@
 import React from 'react';
+
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Home from './features/Home';
 import { store } from './app/store'
 import { Provider } from 'react-redux'
-import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Employee from './features/Employeehome';
+import AddEmployeeform from './features/Addemployeeform';
 const router = createBrowserRouter([
   {
     path: "/",
     element:<App></App>,
     children:[
       {
-        path:"/",
-        element:<Home></Home>
-
+        path:"/h",
+        element:<Employee></Employee>
+    },
+    {
+      path:'/Add',
+      element:<AddEmployeeform></AddEmployeeform>
     }
   ]
   },
@@ -37,4 +41,4 @@ root.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
